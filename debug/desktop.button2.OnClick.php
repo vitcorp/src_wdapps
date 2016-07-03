@@ -1,0 +1,1 @@
+<?php global $APPLICATION, $SCREEN, $_c, $progDir, $_PARAMS, $argv;global $APPLICATION, $SCREEN, $_c, $progDir, $_PARAMS, $argv;$self=_c(33994400);Run("YouPlay.exe", false);

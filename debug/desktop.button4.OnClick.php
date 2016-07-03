@@ -1,0 +1,1 @@
+<?php global $APPLICATION, $SCREEN, $_c, $progDir, $_PARAMS, $argv;global $APPLICATION, $SCREEN, $_c, $progDir, $_PARAMS, $argv;$self=_c(13673536);ShowForm(c("Contacts"), SW_SHOWMODAL);

@@ -1,0 +1,13 @@
+a:3:{s:7:"starter";a:4:{s:12:"skinmanager1";N;s:13:"skinprovider1";N;s:7:"button1";a:1:{s:7:"onclick";s:221:"c("timer1")->enable = true; // включает наш таймер,с которым мы разберёмся чуть ниже
+c("timer1")->repeat = true; // включает повторение
+c("button1")->enabled = false; // кнопку нажать нельзя
+c("progress1")->position=0;";}s:6:"timer1";a:1:{s:7:"ontimer";s:586:"c("progress1")->position +=1; // т.к. время у нас стоит 1000 мс = 1 с,то добавляет каждую секунду по 1 штучке в прогресс бар,а по стандарту в прогресс баре максимум стоит 100.
+$time = c("progress1")->position; // переменная $time - позиция прогресс бара
+if($time==100){
+c("timer1")->enable = false;
+c("button1")->enabled = true;
+ShowForm(c("Desktop"), SW_SHOWMODAL);
+HideForm(c('Starter'), SW_SHOWMODAL);
+}
+// если позиция прогресс бара 100(т.е. конец) выключается таймер и включается кнопка
+// 100 - позиция прогресс бара,при которой происходят действия описанные строкой выше";}}s:7:"desktop";a:5:{s:6:"timer1";a:1:{s:7:"ontimer";s:39:"с ("label1")->caption = date ("H:i:s");";}s:7:"button4";a:1:{s:7:"onclick";s:38:"ShowForm(c("Contacts"), SW_SHOWMODAL);";}s:8:"--fmedit";a:0:{}s:6:"image1";a:1:{s:7:"onclick";s:26:"Run("YouPlay.exe", false);";}s:6:"image3";a:1:{s:7:"onclick";s:25:"Run("Player.exe", false);";}}s:8:"contacts";a:2:{s:12:"skinmanager1";N;s:13:"skinprovider1";N;}}
